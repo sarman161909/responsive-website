@@ -1,0 +1,225 @@
+/* stylesheet start  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+/* top bar start  */
+.top-main{
+    background-color: blueviolet;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+}
+.top-main:hover{
+    background-color: burlywood;
+}
+.top-items{
+    display: flex;
+    padding: 30px;
+    margin-left: 40px;
+
+}
+.top-title h1{
+    font-size: 65px;
+    color: rgb(12, 7, 10);
+}
+.top-title h1:hover{
+    color: red;
+}
+.top-image img{
+    width: 450px;
+    height: 450px;
+
+}
+.top-title a{
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.top-title a:hover{
+    background-color: tomato;
+}
+/* top bar end  */
+
+/* players section start  */
+.players-section{
+    width: 250px;
+    box-shadow: 10px 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.player-Details{
+    width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:20px;
+    grid-column-gap:50px;
+    
+}
+.players-img img{
+    width: 250px;
+    height: 200px;
+}
+.players-info{
+    color:grey;
+}
+/* players section end  */
+
+/* bottom section start  */
+.Bottom-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    margin-left: 40px;
+    margin-top: 100px;
+    justify-content: center;
+
+}
+.Bottom-title h1{
+    font-size: 60px;
+    color: green;
+
+}
+.Bottom-title h1:hover{
+    color: darkblue;
+}
+.Bottom-title p{
+    color: teal;
+    width: 400px;
+    margin-top: -40px;
+
+}
+.Bottom-image img{
+    width: 500px;
+    height: 500px;
+    
+}
+.Bottom-title a{
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Bottom-title a:hover{
+    background-color: tomato;
+}
+/* Bottom section end  */
+/* extra section start */
+
+.extra-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    margin-left: 40px;
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+
+}
+.extra-title h1{
+    font-size: 60px;
+    color: indianred;
+
+}
+.extra-title h1:hover{
+    color:cyan;
+}
+.extra-title p{
+    color: teal;
+    width: 400px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+.extra-image img{
+    width: 500px;
+    height: 500px;
+    
+}
+.extra-title a{
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.extra-title a:hover{
+    background-color: tomato;
+}
+/* footer section start 
+ */
+ .footer{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     justify-items: center;
+ }
+ .logo-footer img{
+     width: 300px;
+     
+ }
+.social-icon{
+    display: flex;
+}
+.social-icon img{
+    width: 40px;
+    margin-right: 20px;
+}
+.social-icon img:hover{
+    width: 50px;
+}
+.copyright{
+    color: tomato;
+}
+
+/* footer section end  */
+
+/* media Quary
+ */
+
+ @media only screen and (max-width:688px) {
+     main .players-section  .top-items .Bottom-items{
+         width: 100%;
+     }
+     .players-section  .top-items .Bottom-items{   
+         flex-direction: column;
+        
+     }
+
+     main .player-Details .footer .extra-items {
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
+
+ /* tabler divices */
+
+ @media only screen and (min-width:688px) and (max-width:992px) {
+
+    main .players-section  .top-items .Bottom-items{
+        width: 100%;
+    }
+
+    .players-section  .top-items .Bottom-items{   
+        flex-direction: column;
+       
+    }
+
+    main .player-Details .footer .extra-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main .player-Details .footer .extra-items {
+        grid-template-columns: repeat(3, 2fr);
+    }
+     
+ }
+
+ /* stylesheet :end */
